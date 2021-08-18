@@ -1,0 +1,109 @@
+@charset "UTF-8";
+html,body{
+	height:100%;
+}
+body{
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.location{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	height: 10vh;
+}
+.txt_location{
+	padding-right:20px;
+	font-size:1vw;
+	color:white;
+}
+.main{
+	display:flex;
+	/* justify-content:space-between; */
+	justify-content:center;
+	align-items:center;
+	height:80%;
+}
+.wrap_todo{
+	width:40vw;
+	height:20vw;
+	/* margin-right:20vw; */
+	background-color:rgba(0,0,0,0.3);
+	border-radius: 10px;
+}
+.wrap_clock{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	line-height:2em;
+	font-size:1.5vw;
+	font-weight:bolder;
+	color:white;
+	align-items:center;
+	height:40%;
+}
+.wrap_username,.todo{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:60%;
+	width:100%
+}
+.frm_username,.frm_todo{
+	width:100%;
+}
+.inp_username,.inp_todo{
+	position:relative;
+	width:70%;
+	left:10%;
+	background-color:transparent;
+	border-radius: 40%;
+	border:none;
+	border-bottom:1px solid;
+	outline:none;
+	color:white;
+	padding-left:20px;
+	font-size:2vw;
+	text-align:center;
+}
+.inp_username::placeholder,.inp_todo::placeholder{
+	color:white;
+	font-size:2vw;
+	text-align:center;
+}
+.todo-list{
+	background-color: rgba(0,0,0,0.3);
+	height: 100vh;
+	width: 20vw;
+	display:none;
+	min-width:190px;
+}
+.todo-list p{
+	color:white;
+	font-weight: border;
+	text-align:center;
+	font-size:2vw;
+	margin: 10px 0;
+}
+.todo-list div{
+	color:white;
+	text-align:center;
+	line-height:2em;
+	font-size:13px;
+	background-color: orange;
+	margin: 15px;
+	border-radius: 10px;
+}
+.todo-list i{
+	padding-right:5px;
+}
+.bg-info{
+	display:flex;
+	align-items:center;
+	height:10%
+}
+.txt_bg{
+	font-size:1vw;
+	padding-left:20px;
+	color:white;
+}
