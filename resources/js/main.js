@@ -13,6 +13,8 @@ let renderCurrentTime = () => {
 }
 
 let renderUser = (event) => {
+	//html요소의 기본 이벤트 중지
+	event.preventDefault();
 	
 	let input = document.querySelector('.inp_username').value;
 	localStorage.setItem('username',input);
@@ -20,7 +22,9 @@ let renderUser = (event) => {
 }
 
 let registSchedule = (event) => {
-		
+	//html요소의 기본 이벤트 중지
+	event.preventDefault();
+	
 	/* 사용자가 이전에 등록한 todo정보가 있는지 */
 	let prevTodo = localStorage.getItem('todo');
 	
